@@ -18,23 +18,22 @@ int main()
 	ofstream outputfile;
 	outputfile.open("data.xyz");
 
-	outputfile << 36 << "\n\n";
+	outputfile << 36  << "\n\n";
 
 	for (double i = 0.0; i <= 2.0; i ++)
 	{
-		c1_x += i*2.46;
-		c2_x += i*2.46;
-		c3_x += i*2.46;
-		c4_x += i*2.46;
-		
+		c1_x += 2.46;
+		c2_x += 2.46;
+		c3_x += 2.46;
+		c4_x += 2.46;
+
 		for (double j = 0.0; j <= 2.0; j ++)
 		{
-			c1_y += j*2.84;
-			c2_y += j*2.84;
-			c3_y += j*2.84;
-			c4_y += j*2.84; 
-			
-			
+			c1_y += 4.26;
+			c2_y += 4.26;
+			c3_y += 4.26;
+			c4_y += 4.26;		
+	
 			outputfile << "C\t" << c1_x << "\t" <<  c1_y << "\t" << 0.0 << endl;
 			outputfile << "C\t" << c2_x << "\t" << c2_y << "\t" << 0.0 << endl;
 			outputfile << "C\t" << c3_x << "\t" << c3_y << "\t" << 0.0 << endl;
